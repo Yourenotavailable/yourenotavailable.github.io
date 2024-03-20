@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats Website</title>
+	<link rel="shortcut icon" href="images/cat face.png">
+    <link rel="stylesheet" href="css/styles.css">
+	<!--
+		Class:  CS 125H
+		Assign: Lab 8
+		Student: Ryder Steward
+		Date: March 13, 2024
+		I do not have any links to add
+	-->
+</head>
+<body style="background-color: black;">
+    <header>
+        <h1 style="text-align: center">Welcome to the Cats Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Cats</a></li>
+            <li><a href="#breeds">Cat Breeds</a></li>
+            <li><a href="#care">Cat Care</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Cats</h2>
+			<article>
+			<img src="images/cat.jpg" alt="cat" height="250">
+            <p>Cats are fascinating creatures known for their unique behavior and independent nature. With a reputation for being both affectionate and aloof, cats exhibit a wide range of behaviors that can vary depending on their breed, upbringing, and individual personality.
+			Despite their independent streak, many cats form strong bonds with their human companions and enjoy affectionate interactions such as cuddling, headbutting, and purring.
+			One of the most distinctive traits of cats is their innate curiosity—they love to explore their surroundings, investigate new objects, and observe their environment with keen interest.
+			Cats are also skilled hunters, displaying stalking behavior and pouncing on prey-like toys or unsuspecting insects.
+			However, cats also value their personal space and may seek solitude when they need time alone to rest and recharge. Overall, the complex and multifaceted behavior of cats adds to their allure as beloved pets and companions. </p>
+        </article>
+		</section>
+
+        <section id="breeds">
+            <h2>Cat Breeds</h2>
+            <ul>
+                <li>Persian</li>
+				<img src="images/persian.jpg" alt="Persian">
+                <li>Maine Coon</li>
+				<img src="images/mainecoon.jpg" alt="Main Coon">
+                <li>Siamese</li>
+				<img src="images/siamese.jpg" alt="Siamese">
+            </ul>
+        </section>
+<div class="container">
+    <p class="hover-text">Hover over me!</p>
+    <div class="popup">
+        <img src="images/cat map.jpg" alt="Cat map" class="popup-img">
+    </div>
+    </div>
+</div>
+        <section id="care">
+            <h2>Cat Care</h2>
+            <aside>
+                <h3>Feeding</h3>
+                <p style="text-indent: 20px">	Proper feeding and grooming are essential aspects of caring for a cat's health and well-being. When it comes to feeding, cats are obligate carnivores, meaning they require a diet primarily consisting of meat.
+				Providing a balanced diet that includes high-quality cat food rich in protein, vitamins, and minerals is crucial for maintaining their overall health and vitality.
+				It's important to follow feeding guidelines based on the cat's age, weight, and activity level to prevent overfeeding or underfeeding. Additionally, access to fresh water is essential at all times to keep cats hydrated.</p>
+            </aside>
+            <aside>
+                <h3>Grooming</h3>
+                <p style="text-indent: 20px">In terms of grooming, cats are typically adept at self-grooming, using their tongues to lick their fur and remove dirt, loose hair, and parasites.
+				However, regular grooming assistance from their human caregivers is still necessary to prevent matting, hairballs, and skin issues.
+				Grooming sessions should include brushing their coat to remove loose fur, especially for long-haired breeds, as well as checking for fleas, ticks, or any signs of skin problems.
+				Trimming their nails regularly and cleaning their ears and teeth are also important aspects of maintaining their hygiene.
+				Building a positive grooming routine from a young age can help cats become more comfortable with the process and strengthen the bond between cats and their owners.</p>
+            </aside>
+        </section>
+		<!--I can stretch across multiple rows or coloms it just doen't look nice for this type of table-->
+		<table>
+		<caption><h3 style="text-align:center">Litterbox Changing</32></caption>
+    <thead>
+      <tr>
+        <th>Number of Cats</th>
+        <th>Days per Week</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>1-2</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>2-3</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>3-4</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>4-5</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>5-6</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- I hope 2 forms with one submission button each is enough it was the only way I could keep them in line and also wsn't sure what else could be added-->
+<h3>Subscribe to Receive Daily Cat Pictures or Upload Your Own</h3>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+		<label for="file">Select a file:</label>
+		<input type="file" id="file" name="file">
+		<button type="submit">Upload</button>
+	</form>
+	<form>
+			<label for="email">Email Address:</label>
+			<input type="email" id="email" name="email" required>
+			<button type="submit">Submit</button>
+		</form>
+	<form>
+		<legend>Did you enjoy this article?</legend>
+		<label><input type="radio" name="yes" value="yes">Yes</label>
+		<label><input type="radio" name="no" value="no">No</label>
+	</form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cats Website</p>
+    </footer>
+</body>
+</html>

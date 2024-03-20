@@ -1,0 +1,149 @@
+/* 
+	Class:  CS 125H
+		Assign: Lab 8
+		Student: Ryder Steward
+		Date: March 13, 2024
+		I do not have any links to add
+*/
+
+h1 {
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	border: 3px solid white;
+	background: linear-gradient(120deg, gray 0%, gray 30%, lightgray 50%, gray 80%, gray 100%);
+}
+h2 {
+	padding-top: 1.5em;
+	padding-bottom: 1em;
+}
+h3{
+	padding-top: 1.5em;
+	padding-bottom: 1em;
+}
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    color: white;
+	
+}
+h3 { 
+	 text-align: center;
+}
+article img {
+	float: right;
+	margin: .5em 0 1em 1em;
+	border: 1px solid black;
+}
+
+main img { 
+	padding-bottom: 3em;
+}	
+#care aside p {
+    font-style: italic;
+	padding: 1.5em;
+	border: 3px solid gray;
+}
+#feeding {
+	padding: 1.5em;
+	border: 3px solid gray;
+}
+nav ul li a:hover {
+    color: blue;
+}
+form {
+		padding-bottom: 5em:
+}
+section p::first-letter {
+    font-size: 150%;
+    color: red;
+}
+
+#about {
+    text-align: center;
+	border: 3px solid gray;
+}
+
+.breed {
+    font-weight: bold;
+}
+
+body {
+    font-family: Georgia, serif;
+	color: white;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+nav {
+    background-color: lightgray;
+	color: black
+}
+
+nav ul {
+    text-align: center;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+  color: black;
+}
+tr:nth-child(odd) {
+  background-color: gray;
+  color: black;
+}
+th {
+	 color: black;
+}
+
+
+/* ignore this it is just a test*/
+.container {
+    position: relative;
+    width: 300px
+}
+
+.popup {
+    display: none;
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-img {
+    width: 280px
+}
+
+.hover-text:hover + .popup {
+    display: block;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+footer { 
+	padding-top: 1.5em;
+	padding-bottom: 1em;
+}
