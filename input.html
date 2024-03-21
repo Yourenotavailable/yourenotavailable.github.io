@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Show Tracker</title>
+	<link rel="shortcut icon" href="images/logo.png">
+	<link rel="stylesheet" href="styles/input.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+</head>
+
+<body>
+	<header>
+	 <nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+    	<ul>
+        	<li><a href="index.html" class="current">Home</a>
+            	<ul>
+					<li><a href="#">Add New</a></li>
+					<li><a href="#">Search</a></li>
+                	<li><a href="#">Genre</a></li>
+                	<li><a href="#">Language</a></li>
+            	</ul>
+        	</li>
+    	</ul>
+	</nav>
+		<h2>Show Tracker</h2>
+		<h3>Keep track of your shows here</h3>
+	</header>
+	
+	<main>
+			<h1>Enter a Show</h1>
+    		<form action="index.html" method="get"
+        		name="order_form" id="order_form">
+    			<fieldset>
+	        		<legend>Show Information</legend>
+					<label for="file">Thumbnail:</label>
+					<input type="file" id="file" name="file"><br>
+	        		<label for="Title">Title:</label>
+	        		<input type="text" name="title" id="title"><br>
+					<label for="alt-title">Alt Title:</label>
+	        		<input type="alt-text" name="alt-title" id="alt-title"><br>
+	        		<label for="description">Description:</label>
+	        		<input type="text" name="description" id="description"><br>
+					<label for="notes">Rating / Notes:</label>
+					<input type="text" name="notes" id="Notes"
+							placeholder="Violance, Gore, ect"><br>
+					<label for="genre">Genre:</label>
+					<select name="genre" id="genre">
+				    	<option value="o">Other</option>
+				    	<option value="f">Fantacy</option>            
+				    	<option value="s">Sci fi</option>
+						<option value="c">Comedy</option>
+						<option value="r">Romance</option>
+					</select><br>
+					<legend>Status</legend>
+					  <label><input type="radio" name="complete" value="complete">Complete</label>
+					  <label><input type="radio" name="ongoing" value="ongoing">Ongoing</label>
+					  <label><input type="radio" name="canceled" value="canceled">Canceled</label><br>
+					  <input type="submit" id="submit" value="Submit">
+					  <input type="reset" id="reset" value="Reset Fields"><br>
+    			</fieldset>
+	</main>
+	<footer>
+		<p>&copy; 2022, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+	</footer>
+</body>
+</html>

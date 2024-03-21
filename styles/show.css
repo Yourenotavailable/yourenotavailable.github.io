@@ -1,0 +1,172 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: white;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+	border: 1.5px solid black;
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+/* the styles for the header */
+header {
+	padding: 1.5em 0 2em 0;
+	border-bottom: 1.5px solid black;
+	background-image: linear-gradient(
+	    180deg, #f6bb73 0%, #f6bb73 30%, #f6bb55 80%, #f6bb55 100%);
+}
+header h2 {
+	font-size: 175%;
+	color: black;
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
+header nav {
+	float: left;
+	padding: 0 3.75%;
+}
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+    width: 20%;
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+	border: 2px solid #e4e3dc;
+	border-radius: 10px;
+    background-color: #f0f3ee;
+	width: 110px;
+    color: black;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: black;
+}
+#nav_menu ul ul {
+	width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* the styles for the main content */
+main {
+	width: 95%;
+	padding: 50px 2.5% 20px 2.5%;
+}
+ main p {
+	font-size: 100%;
+	padding: .5em .5em .25em .5em;
+	margin: 0;
+	border-right: 1.5px solid black;
+	border-left: 1.5px solid black;
+	border-bottom: 1.5px solid black;
+	padding-bottom: .5em;
+}
+main h3 {
+	text-align: center;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+	border: 1.5px solid black;
+	background-image: linear-gradient(
+	    180deg, #e98541 0%, #e98541 30%, #f19f4a 80%, #f19f4a 100%);
+}
+main h2 {
+	text-align: center;
+	font-size: 100%;
+	padding: .5em 0 .25em 0;
+	border-right: 1.5px solid black;
+	border-left: 1.5px solid black;
+	border-top: 1.5px solid black;
+}
+main h4 {
+	padding-left: 2em;
+}
+/* the styles for the footer */
+footer {
+	background-image: linear-gradient(
+	    180deg, #f6bb55 0%, #f6bb55 30%, #f6bb73 80%, #f6bb73 100%);
+	clear: both;
+	border-top: 1.5px solid black;
+}
+footer p {
+	text-align: center;
+	color: black;
+	padding: 1em 0;
+	
+}
+#mobile_menu {
+	display: none;
+}
+@media only screen and (max-width: 734px) {
+	section h1 {
+		font-size: 125%
+	}
+	section h2, aside h2 {
+		font-size: 110%;
+	}
+	aside h3 a {
+		font-size: 85%;
+	}
+}
+
+@media only screen and (max-width: 648px) {
+	header img { float: none; }
+	header { text-align: center; }
+	section {
+		float: none;
+		width: 95%;
+	}
+	aside {
+		float: none;
+		padding-right: 2.5%;
+		width: 95%;
+	}
+	article img { max-width: 30%; }
+	#speakers {
+		column-count: 2;
+	}
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: #800000 !important;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	body { font-size: 90%; }
+}
