@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Show Tracker</title>
 	<link rel="shortcut icon" href="images/logo.png">
-	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/search.css">
     <link rel="stylesheet" href="styles/slicknav.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.slicknav.min.js"></script>
@@ -22,7 +22,7 @@
 	 <nav id="mobile_menu"></nav>
 	<nav id="nav_menu">
     	<ul>
-        	<li><a class="current">Menu</a>
+        	<li><a href="index.html" class="current">Menu</a>
             	<ul>
 					<li><a href="input.html">Add New</a></li>
 					<li><a href="search.html">Search</a></li>
@@ -35,19 +35,13 @@
 	</header>
   
 	<main>
-		<center>
-			<h3 class="top"> In Progress</h3>
-		</center>
-			<p><a href="z-the-flash.html">The Flash</a></p>
-		<center>
-			<h3> Watch Later</h3>
-		</center>
-			<p><a href="z-the-flash.html">The Flash</a></p>
-		<center>
-			<h3> Watched</h3>
-		</center>
-			<p><a href="z-the-flash.html">The Flash</a></p>
-			
+	<center>
+		<form>
+			<label for="search">Search:</label>
+			<input type="text" name="search" id="search"><br>
+		</form>
+		<p><a href="z-the-flash.html">The Flash</a></p>
+	</center>
 	</main>
 	<footer>
 		<p>&copy; 2024, Show Tracker, Oregon City, OR</p>
